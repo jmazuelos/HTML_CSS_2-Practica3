@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      type="image/jpg"
+      href="assets/images/global/favicon/favicon.ico"
+    />
+    <title>Samurai Chef | Home</title>
+    <link rel="stylesheet" href="/src/assets/styles/main.scss" />
+    <script type="module" src="assets/scripts/main.js"></script>
+  </head>
+  <body>
+    <!--======= #HEADER =======-->
+    <include src="./views/header.html"></include>
+
+    <!--======= #MAIN =======-->
+    <main class="custom-container">
+      <div class="cover">
+        <h1 class="cover__title">Samurai chef</h1>
+        <h2 class="cover__catchword">La batalla culinaria comienza</h2>
+        <div class="cover__image-content pb-2">
+          <img
+            class="cover__image"
+            src="assets/images/home/portada.jpg"
+            alt=""
+          />
+        </div>
+        <h3 class="cover__about">I Edición del concurso de cocina japonesa</h3>
+        <h3 class="cover__location">Sevilla - 6 junio 2024</h3>
+        <button
+          type="button"
+          onclick="window.location.href='blog.html';"
+          class="cover__btn btn-primary"
+        >
+          Participa
+        </button>
+      </div>
+    </main>
+
+    <!--======= #FOOTER =======-->
+    <include src="./views/footer.html"></include>
+  </body>
+</html>

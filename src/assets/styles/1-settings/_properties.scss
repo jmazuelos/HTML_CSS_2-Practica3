@@ -1,0 +1,30 @@
+/**
+* Scss variables for: devices breakpoints, model-box properties and positioning properties
+*/
+
+/*======= #DEVICES BREAKPOINTS =======*/
+
+/**
+* Devices breakpoints
+* Info: set by max-width value.
+* Used in: 
+*/
+$breakpoints: (
+  laptop: 1200px,
+  // 992px - 1200px
+  tablet: 991px,
+  // 768px - 991px
+  mobile-vertical: 767px,
+  // 0px - 767px
+  mobile-horizontal: 450px,
+);
+
+/*======= #POSITIONING PROPERTIES =======*/
+
+/*======= #BOX MODEL PROPERTIES =======*/
+
+/** #HEIGHT **/
+$headerNavHeight: 80px;
+
+/** #Z-INDEX **/
+$z-fixed: 1000;

@@ -1,0 +1,29 @@
+/*======= #SASS MODULES =======*/
+@use "sass:color";
+
+/*======= #MAIN COLORS =======*/
+$color-primary: hsl(230, 45%, 20%);
+$color-secondary: hsl(0, 0%, 100%);
+$color-transparent: hsla(0, 0%, 0%, 0);
+$color-error: hsl(0, 100%, 50%);
+$color-valid: hsl(118, 100%, 35%);
+
+/*======= #GRADIENTS =======*/
+$gradient-radial-image: radial-gradient(
+  circle at center,
+  $color-secondary 50%,
+  $color-transparent 70%
+);
+
+$gradient-linear-top: linear-gradient(
+  to top,
+  $color-transparent 0%,
+  $color-secondary 10%
+);
+
+/*======= #BOOTSTRAP THEME =======*/
+
+//Personaliza $theme-colors map de Bootstrap
+$theme-colors: (
+  "primary": $color-primary,
+);

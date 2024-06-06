@@ -1,0 +1,62 @@
+/*======= #BLOCK =======*/
+.footer {
+  padding-block: 2rem;
+  margin-top: 30px;
+  color: $color-footer-set;
+  text-align: center;
+  background-color: $color-primary;
+}
+
+.footer__content {
+  row-gap: 2rem;
+}
+
+.footer__logo {
+  font-size: $h1-font-size;
+  font-weight: $font-bold;
+  color: $color-footer-set;
+}
+
+.footer__description {
+  margin-top: 5px;
+  font-size: $normal-font-size;
+}
+
+.footer__title {
+  margin-bottom: 5px;
+  font-size: $h3-font-size;
+}
+
+.footer__data {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2.5rem;
+}
+
+.footer__links {
+  > li {
+    margin-bottom: 5px;
+  }
+}
+
+/*======= #ELEMENTS =======*/
+.footer__link {
+  font-size: $small-font-size;
+  color: $color-footer-set;
+  @include hover-link-transition($color-hover-footer-link);
+}
+
+.footer__social {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center; // Centra verticalmente
+  justify-content: center; // Centra horizontalmente
+}
+
+.footer__social-link {
+  font-size: $h1-font-size;
+  @include transition(transform 0.4s);
+
+  &:hover {
+    @include transform(translateY(-0.25rem));
+  }
+}

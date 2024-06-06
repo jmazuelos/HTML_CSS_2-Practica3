@@ -1,0 +1,51 @@
+.article__header {
+  align-content: center;
+  height: 35vh;
+  text-align: center;
+}
+
+.article__title {
+  font-weight: $font-weight-strong-bold;
+}
+
+.article img:where(.main-image) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 45vh;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.15;
+  mask-image: $gradient-linear-top;
+}
+
+.article img:where(.radial-image) {
+  mask-image: $gradient-radial-image;
+}
+
+.article :where(.first-section:has(blockquote)) {
+  display: flex;
+  gap: 10px;
+  margin-top: 0.75rem;
+
+  @media (max-width: 670px) {
+    flex-wrap: wrap;
+  }
+}
+
+.article__figure:has(figcaption) {
+  width: 90%;
+  margin-inline: auto;
+  font-size: $font-size-small;
+  text-align: center;
+}
+
+.article :where(p, blockquote) {
+  font-size: $font-size-big;
+}
+
+:is(.article__section):has(> h3 + p) {
+  margin-block: 1.25rem;
+}
