@@ -17,23 +17,23 @@
     <include src="./views/header.html"></include>
 
     <!--======= #MAIN =======-->
-    <main class="custom-container">
-      <div class="cover">
-        <h1 class="cover__title">Samurai chef</h1>
-        <h2 class="cover__catchword">La batalla culinaria comienza</h2>
-        <div class="cover__image-content pb-2">
+    <main class="custom-container py-3">
+      <div class="cover flex flex-col items-start sm:grid sm:grid-rows-[30vh_10vh_15vh_10vh_25vh] sm:grid-cols-[30vw_5vw_30vw_15vw] sm:gap-2">
+        <h1 class="font-black text-[calc(14px+5vw)] sm:text-[calc(20px+5cqw)] sm:row-start-1 sm:row-end-2 sm:col-start-2 sm:col-end-5 sm:text-shadow justify-self-start mt-auto z-20">Samurai chef</h1>
+        <h2 class="font-medium text-[calc(1.325rem+.9vw)] sm:text-[calc(20px+1cqw)]/[30px] sm:row-start-2 sm:row-end-3 sm:col-start-3 sm:col-end-5 sm:justify-self-center sm:text-center sm:text-shadow">La batalla culinaria comienza</h2>
+        <div class="cover__image-content pb-2 sm:relative sm:row-start-1 sm:row-end-6 sm:col-start-1 sm:col-end-3 sm:h-[91vh] sm:before:gradient-shadow-right sm:after:gradient-shadow-left">
           <img
-            class="cover__image"
+            class="opacity-70 sm:w-full sm:h-full sm:object-cover"
             src="assets/images/home/portada.jpg"
             alt=""
           />
         </div>
-        <h3 class="cover__about">I Edición del concurso de cocina japonesa</h3>
-        <h3 class="cover__location">Sevilla - 6 junio 2024</h3>
+        <h3 class="font-black text-[calc(1.3rem+.6vw)] mb-2 sm:text-[calc(18px+1cqw)] sm:row-start-3 sm:row-end-4 sm:col-start-3 sm:col-end-5 sm:place-self-center sm:text-center sm:text-shadow">I Edición del concurso de cocina japonesa</h3>
+        <h3 class="text-[calc(1.3rem+.6vw)] mb-2 sm:z-20 sm:text-[calc(12px+1vw)] sm:row-start-4 sm:row-end-5 sm:col-start-3 sm:col-end-4 sm:place-self-center sm:text-center sm:text-shadow">Sevilla - 6 junio 2024</h3>
         <button
           type="button"
           onclick="window.location.href='blog.html';"
-          class="cover__btn btn-primary"
+          class="btn-primary max-custom-sm:self-center sm:text-[calc(12px+1vw)] sm:row-start-4 sm:row-end-5 sm:col-start-4 sm:col-end-5 max-custom-lg:row-start-5 max-custom-lg:row-end-6 max-custom-lg:col-start-3 max-custom-lg:col-end-4 max-custom-lg:justify-self-center max-custom-lg:mb-auto"
         >
           Participa
         </button>

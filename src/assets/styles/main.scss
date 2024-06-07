@@ -15,6 +15,18 @@
   .custom-container {
     @apply flex justify-between items-center mx-auto px-[5vw] sm:px-[8vw] w-full;
   }
+
+  .link-primary {
+    @apply text-link hover:text-link-dark;
+  }
+
+  .gradient-shadow-right {
+    @apply absolute inset-0 content-[''] bg-linear-gradient-right z-10;
+  }
+
+  .gradient-shadow-left {
+    @apply absolute inset-0 content-[''] bg-linear-gradient-left z-10;
+  }
 }
 
 /**
