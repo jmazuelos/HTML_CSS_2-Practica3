@@ -5,6 +5,7 @@
   "description": "Boilerplate for Advanced HTML/CSS Tools UOC students",
   "scripts": {
     "stylelint": "stylelint src/**/*.scss",
+    "start": "parcel serve src/index.html --public-url / --dist-dir dist",
     "parcel:serve": "parcel src/index.html -p 8123 --target web --open",
     "parcel:build": "parcel build src/index.html --target web --no-source-maps --no-cache",
     "clean": "rimraf dist .cache .cache-loader .parcel-cache",

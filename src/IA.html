@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Contest 2024</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: #fff;
+            border-bottom: 1px solid #ccc;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            float: left;
+            margin: 0;
+        }
+
+        header nav {
+            float: right;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        header nav ul li a.selected {
+            background-color: #000;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        /* Clearfix for header */
+        header::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Main Content */
+        .intro {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .intro img {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        /* Recipes Section */
+        .recipes {
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+        }
+
+        .recipes h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .recipes p {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #555;
+        }
+
+        .recipe-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: nowrap; /* Asegura que las tarjetas estén en una fila */
+            gap: 20px; /* Añade espacio entre las tarjetas */
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            width: calc(33.333% - 20px); /* Ajuste para el ancho de las tarjetas */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #fff;
+            color: #333;
+            padding: 40px 0;
+            border-top: 1px solid #ccc; /* Línea gris en la parte superior del footer */
+        }
+
+        footer .footer-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        footer .footer-section {
+            flex: 1;
+            padding: 0 10px;
+        }
+
+        footer .footer-section h3 {
+            color: #000;
+            margin-bottom: 10px;
+        }
+
+        footer .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        footer .footer-section ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        footer .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+        }
+
+        footer .social-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        footer .social-links li {
+            display: inline;
+            margin-left: 10px;
+        }
+
+        footer .social-links li a {
+            color: #333;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Cooking contest 2024 edition</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#the-contest">The contest</a></li>
+                    <li><a href="#recipes">Recipes</a></li>
+                    <li><a href="#contestants" class="selected">Contestants</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="intro">
+            <h2>Contestants</h2>
+            <p>This section describes the recipes of the best contestants</p>
+            <img src="assets/images/IA/principal.jpg" alt="Cooking Contest Main Image">
+        </section>
+
+        <!-- Recipes Section -->
+        <section class="recipes">
+            <h2>The Recipes</h2>
+            <p>These are the recipes of the best contestants</p>
+            <div class="recipe-cards">
+                <div class="card">
+                    <img src="assets/images/IA/foto.jpg" alt="John Cooper">
+                    <h3>Cajun Seafood Pasta</h3>
+                    <p><strong>John Cooper:</strong> This Cajun seafood pasta recipe is a hot one, but delicious!</p>
+                </div>
+                <div class="card">
+                    <img src="assets/images/IA/foto.jpg" alt="Marta Alonso">
+                    <h3>Cedar Planked Salmon</h3>
+                    <p><strong>Marta Alonso:</strong> Salmon reaches its full potential when it's grilled on top of a cedar plank.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/images/IA/foto.jpg" alt="Mary Ann Stones">
+                    <h3>Poulet au Vinaigre</h3>
+                    <p><strong>Mary Ann Stones:</strong> Irresistible chicken, cooked with vinegar.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <!-- Recipes Section -->
+            <div class="footer-section">
+                <h3>Recipes</h3>
+                <ul>
+                    <li><a href="#cajun-seafood">Cajun Seafood Pasta</a></li>
+                    <li><a href="#cedar-planked">Cedar Planked Salmon</a></li>
+                    <li><a href="#poulet-au-vinaigre">Poulet au Vinaigre</a></li>
+                </ul>
+            </div>
+
+            <!-- Contestants Section -->
+            <div class="footer-section">
+                <h3>Contestants</h3>
+                <ul>
+                    <li><a href="#john-cooper">John Cooper</a></li>
+                    <li><a href="#marta-alonso">Marta Alonso</a></li>
+                    <li><a href="#mary-ann-stones">Mary Ann Stones</a></li>
+                </ul>
+            </div>
+
+            <!-- Contest Editions Section -->
+            <div class="footer-section">
+                <h3>Contest Editions</h3>
+                <ul>
+                    <li><a href="#edition-2023">Edition 2023</a></li>
+                    <li><a href="#edition-2022">Edition 2022</a></li>
+                    <li><a href="#edition-2021">Edition 2021</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Cooking Contest. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="#facebook">Facebook</a></li>
+                <li><a href="#twitter">Twitter</a></li>
+                <li><a href="#instagram">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
