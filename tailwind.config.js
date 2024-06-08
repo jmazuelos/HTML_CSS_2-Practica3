@@ -31,10 +31,10 @@ module.exports = {
       textShadow: { 
         DEFAULT: '0 0 4px oklch(57.18% 0.172 19.48)'
       } ,
-      //TYPOGRAPHY
-      fontFamily: {
+      //TYPOGRAPHY (configurado en main.scss)
+      /*fontFamily: {
         primary: ['"Merienda"', 'cursive'],
-      },
+      },*/
       fontSize: {
         big: '1.1rem',
         normal: '0.95rem',
@@ -53,6 +53,9 @@ module.exports = {
       zIndex: {
         fixed: '1000',
       },
+      textAlign: {
+        'webkit-text-center': '-webkit-center'
+      }
     },
   },
   plugins: [
@@ -65,16 +68,16 @@ module.exports = {
       };
 
       const steps = [
-        "0%",
-        "10%",
-        "20%",
-        "30%",
-        "40%",
-        "50%",
-        "60%",
-        "70%",
-        "80%",
-        "90%",
+        "0",
+        "10",
+        "20",
+        "30",
+        "40",
+        "50",
+        "60",
+        "70",
+        "80",
+        "90",
       ];
 
       const utilities = Object.entries(shape).reduce(
@@ -83,7 +86,7 @@ module.exports = {
             const className = `.radial-mask-${shorthand}-${step}`;
             return {
               [className]: {
-                maskImage: `radial-gradient(${shape} at center, hsl(0, 0%, 100%) ${step}, transparent 70%)`,
+                maskImage: `radial-gradient(${shape} at center, hsl(0, 0%, 100%) ${step}%, transparent 70%)`,
               },
             };
           });

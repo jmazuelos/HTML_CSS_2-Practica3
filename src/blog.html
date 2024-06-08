@@ -1,3 +1,4 @@
+<!--TODO: HACER BLOG-->
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -12,28 +13,19 @@
     <link rel="stylesheet" href="/src/assets/styles/main.scss" />
     <script type="module" src="/src/assets/scripts/main.js"></script>
   </head>
-  <body>
+  <body class="font-primary">
     <!--======= #HEADER =======-->
     <include src="./views/header.html"></include>
 
     <!--======= #MAIN =======-->
-    <main class="custom-container">
-      <article class="article">
-        <div class="article__header">
-          <h1 class="article__title">
-            I Edición del concurso de cocina japonesa
-          </h1>
-          <span>Por: jmazuelos</span>
-          <img
-            class="main-image"
-            src="/src/assets/images/blog/platos.jpeg"
-            alt="Foto 1"
-          />
-        </div>
-        <div class="article__body">
-          <section class="first-section">
+    <main class="custom-container py-3">
+      <article>
+        <!--Ejemplo de componente dinámico (archivo .js con datos mockeados)-->
+        <include data-title="I Edición del concurso de cocina japonesa" data-author="jmazuelos" src="./views/blog-header.html"></include>
+        <div>
+          <section class="flex gap-2.5 mt-8 max-custom-sm:flex-wrap">
             <blockquote>
-              <p>
+              <p class="text-big mb-4">
                 <strong
                   >“La cocina de autor es poner tu personalidad en lo que haces
                   y ese sentimiento la convierte en algo distinto.”</strong
@@ -41,34 +33,34 @@
               </p>
               <cite>— <strong>Ferran Adriá</strong></cite>
             </blockquote>
-            <p>
+            <p class="text-big mb-4">
               Bienvenidos a la primera edición del concurso de cocina japonesa
               que tendrá lugar en Sevilla. Este evento busca celebrar la rica y
               diversa cultura gastronómica de Japón.
             </p>
           </section>
-          <section class="article__section">
-            <h3>Información General</h3>
-            <p>
+          <section class="my-5">
+            <h3 class="font-medium text-2xl mb-2" class="font-medium text-2xl mb-2">Información General</h3>
+            <p class="text-big mb-4">
               Prepárate para un día lleno de sabores exquisitos y presentaciones
               culinarias que deleitarán tus sentidos. Las reglas del concurso
               son las siguientes:
             </p>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
+            <ul>
+              <li class="text-base p-2 border-b">
                 <strong>Tiempo:</strong> Los participantes tienen un tiempo
                 limitado de 90 minutos para preparar y presentar sus platos.
               </li>
-              <li class="list-group-item">
+              <li class="text-base p-2 border-b">
                 <strong>Utensilios:</strong> Los participantes pueden utilizar
                 solo los utensilios proporcionados por la organización del
                 concurso.
               </li>
-              <li class="list-group-item">
+              <li class="text-base p-2 border-b">
                 <strong>Originalidad:</strong> Se premiará a los participantes
                 que muestren creatividad e innovación en sus platos.
               </li>
-              <li class="list-group-item">
+              <li class="text-base p-2">
                 <strong>Técnica:</strong> Los participantes deben demostrar
                 habilidades técnicas en la preparación de sus platos. Por
                 ejemplo, deben mostrar su habilidad para cortar pescado para
@@ -76,9 +68,9 @@
               </li>
             </ul>
           </section>
-          <section class="article__section">
-            <h3>Un Día de Celebración Gastronómica</h3>
-            <p>
+          <section>
+            <h3 class="font-medium text-2xl mb-2">Un Día de Celebración Gastronómica</h3>
+            <p class="text-big mb-4">
               El concurso de cocina japonesa no es solo una competencia, sino
               una celebración de la gastronomía japonesa. Los participantes
               tendrán la oportunidad de demostrar sus habilidades culinarias,
@@ -90,21 +82,11 @@
               día inolvidable lleno de sabores, colores y experiencias únicas.
             </p>
           </section>
-          <figure class="article__figure">
-            <img
-              width="700"
-              class="radial-image"
-              src="/src/assets/images/blog/concurso.jpg"
-              alt="Consurso"
-            />
-            <figcaption>
-              Equipo de chefs celebrando el concurso. Dibujado por el maestro
-              'Mangaka'.
-            </figcaption>
-          </figure>
-          <section class="article__section">
-            <h3>Agradecimientos</h3>
-            <p>
+          <!--Ejemplo de componente dinámico (archivo .js con datos mockeados)-->
+          <include data-img="/src/assets/images/blog/concurso.jpg" data-figcaption="Equipo de chefs celebrando el concurso. Dibujado por el maestro 'Mangaka'." src="./views/radial-figure.html"></include>
+          <section>
+            <h3 class="font-medium text-2xl mb-2">Agradecimientos</h3>
+            <p class="text-big mb-4">
               Queremos expresar nuestro más sincero agradecimiento a todos los
               participantes por su esfuerzo y dedicación. Su pasión por la
               cocina japonesa van a hacer de este evento un verdadero éxito.

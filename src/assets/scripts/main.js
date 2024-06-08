@@ -3,11 +3,7 @@
  * see commented examples below
  */
 
-// import 'some-node-module';
-// import SomeModule from 'some-node-module';
+import "./blog/_blog-header.js";
+import "./blog/_radial-figure.js";
 
-//import "./header/_header-nav.js";
 
-/**
- * Write any other JavaScript below
- */
