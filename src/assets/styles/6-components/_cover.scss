@@ -1,3 +1,8 @@
+/**
+ * TailwindCSS no soporta las funcionalidades de container-query, por tanto, se recurre a esta configuración.
+ * Podría crearse un plugin para tener la funcionalidad
+ */
+
 @supports (display: grid) {
   @media (min-width: 640px) {
     .cover {
